@@ -40,7 +40,7 @@ public class LoginTest extends BaseTest {
     }
 
 
-//comment
+//comment 2
     @Test (enabled = false , description = "Mutable method")
     public void TestCookiesInjection() throws InterruptedException {
 
