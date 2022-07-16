@@ -32,7 +32,6 @@ public class BaseTest {
 
     @BeforeMethod
     public void before(){
-
         WebDriver driver = new DriverFactory().initializeDriver();
         setDriver(driver);
     }

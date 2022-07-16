@@ -11,7 +11,7 @@ public class ConfigUtils {
         String env = System.getProperty("env","production");
         switch (env){
             case "production":
-                properties=PropertiesUtils.loadProperties("src/test/java/com/qacart/todo/config/production.properties");
+                    properties=PropertiesUtils.loadProperties("src/test/java/com/qacart/todo/config/production.properties");
                 break;
 
                 case "an":
@@ -31,7 +31,7 @@ public class ConfigUtils {
     }
 
     public String getUrl(){
-        String prop =   properties.getProperty("baseUrl");
+        String prop = properties.getProperty("baseUrl");
         if (prop != null){
             return prop;
         }else {
